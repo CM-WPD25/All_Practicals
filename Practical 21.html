@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>practical-21</title>
+</head>
+<body>
+
+<h1>WPD Feedback form</h1>
+<h2>Please Notedown your views</h2>
+
+<form action="/action_page.php" method="get" id="form1">
+    <label for="feedback">Two-line feedback about subject teacher:</label>
+    <input type="text" id="feedback" name="feedback"><br>
+
+</form>
+<p>The fieldset below is outside the form, but still a part of the form.</p><br>
+
+  <fieldset form="form1">
+  <legend>Personal_Info:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="First name"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="Last name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Please Submit">
+</fieldset>
+</form>
+
+</body>
+</html>
