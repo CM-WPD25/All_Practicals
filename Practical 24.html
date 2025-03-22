@@ -1,0 +1,200 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical-23_RWD Template</title>
+    <style>
+        /* Base styles for the layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #fadbd8;
+        }
+
+        header {
+            background-color: #85c1e9;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 45px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            background-color: powderblue;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .box h3 {
+            margin-top: 30px;
+        }
+
+        .footer{
+            background-color:#0099cc;
+            color:#ffffff;
+            text-align:center;
+            font-size:12px;
+            padding:15px;           
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+
+            .box h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Practicals Learn in Web Page Designing</h1>
+    </header>
+
+    <nav>
+        <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/">MET Poly</a>
+        <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/information-technology/">IT Dept.</a>
+        <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/it-vision-mission/"> Dept. Vision</a>
+        <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-faculty/">Staff</a>
+    </nav>
+
+    <div class="container">
+        <section class="grid">
+            <div class="box">
+                <img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/06/Introduction-to-HTML.jpg" alt="Image Not found">
+                <h3>Introduction to HTML</h3>
+                <p>
+                    <ul type="square">
+                        <li><a href="Practical 1.html">Prac 1</a> - Basic HTML tags</li>
+                        <li><a href="Practical 2.html">Prac 2</a> - Heading tags</li>
+                        <li><a href="Practical 3.html">Prac 3</a> - Paragraph in web page</li>
+                        <li><a href="Practical 4.html">Prac 4</a> - Block level tags</li>
+                        <li><a href="Practical 5.html">Prac 5</a> - Text level tag</li>
+                        <li><a href="Practical 6.html">Prac 6</a> - Border Properties</li>
+                        <li><a href="Practical 7.html">Prac 7</a> - Special characters</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://www.tutorialbrain.com/wp-content/uploads/2019/02/Links-in-HTML-1.jpg" alt="Image Not found">
+                <h3>Lists and Links</h3>
+                <p>
+                    <ul type="square">
+                        <li><a href="Practical 8.html">Prac 8</a> - Order and Unorder list</li>
+                        <li><a href="Practical 9.html">Prac 9</a> - Different types of list</li>
+                        <li><a href="Practical 10.html">Prac 10</a> - Web page link</li>
+                        <li><a href="Practical 11.html">Prac 11</a> - Links in web page</li>
+                        <li><a href="Practical 12.html">Prac 12</a> - Links with images</li>
+                        <li><a href="Practical 13.html">Prac 13</a> - Colors for links</li>
+                    </ul>
+</p>
+            </div>
+            <div class="box">
+                <img src="https://www.gavick.com/documentation/wp-content/uploads/2013/09/colors-table.png" alt="Image Not found">
+                <h3>  Images, Colors and Background</h3>
+                <p>
+                    <ul type="square">
+                        <li><a href="Practical 14.html">Prac 14</a> - Image on web page foreground and background</li>
+                        <li><a href="Practical 15.html">Prac 15</a> - Image with hyperlink</li>
+                        <li><a href="Practical 16.html">Prac 16</a> - Background properties</li>                    
+                    </ul>
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://trainings.internshala.com/blog/wp-content/uploads/2023/07/Frames-in-html-1-1536x640.jpg" alt="Image Not found">
+                <h3>Table, Frames and Forms</h3>
+                <p>
+                    <ul type="square">
+                        <li><a href="Practical 17.html">Prac 17</a> - Table in web page</li>
+                        <li><a href="Practical 18.html">Prac 18</a> - Table within table & images in tables</li>
+                        <li><a href="Practical 19.html">Prac 19</a> - Row and column attributes of table</li>
+                        <li><a href="Practical 20.html">Prac 20</a> - Frame in web page</li>
+                        <li><a href="Practical 21.html">Prac 21</a> - HTML Forms</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://i.ytimg.com/vi/vzZ7TXGIQ3Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDg1mgNYG8DFP7DefNolfWrHFhC6A" alt="Image Not found">
+                <h3>Cascading Style sheets</h3>
+                <p>
+                    <ul type="square">
+                        <li><a href="Practical 22.html">Prac 22</a> - CSS by applying style sheets</li>
+                        <li><a href="Practical 23.html">Prac 23</a> - RWD (Responsive Web Design) Templates</li>
+                        <li><a href="Practical 24.html">Prac 24</a> - Hosting of  website on open source platform</li>
+                        <li><a href="Practical 25.html">Prac 25</a> - Web site to represent portfolio</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        
+
+    </div>
+    <div class="footer">
+        <h1>Resize the browser window to see how the content respond to the resizing.</h1>
+    </div>
+</body>
+</html>
