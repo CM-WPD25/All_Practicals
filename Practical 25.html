@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+            header h1 {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+        /* Navigation Bar */
+        nav {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 14px 20px;
+                margin: 0 15px;
+                transition: background-color 0.3s ease;
+            }
+
+                nav a:hover {
+                    background-color: #555;
+                }
+        .topnav {
+            overflow: hidden;
+            background-color: cornflowerblue;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+            section h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            section p {
+                font-size: 1.2rem;
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+        }
+
+            .portfolio-item img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .portfolio-item h3 {
+                font-size: 1.5rem;
+                margin: 15px 0;
+            }
+
+            .portfolio-item p {
+                padding: 0 15px 15px;
+            }
+
+        /* Footer Styles */
+        footer {
+            background-color: powderblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+                nav a {
+                    padding: 12px 25px;
+                    font-size: 1.2rem;
+                    margin: 5px 0;
+                }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            .portfolio-item img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        
+    </div>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="1.jfif" alt="About me">
+            <p>Hello! I'm a professor in IT Department of MET BKC IOT Polytechnic</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Check out some of my recent Practical s below.</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="Prac1.png" alt="Project 1">
+                    <h3><a href="Practical 1.html">Project 1</a></h3>
+                    <p>Title of 1st Practical .</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac2.png" alt="Project 2">
+                    <h3><a href="Practical 2.html">Project 2</a></h3>
+                    <p>Title of Practical  no. 2.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac3.png" alt="Project 3">
+                    <h3><a href="Practical 3.html">Project 3</a></h3>
+                    <p>Title of Practical  no. 3.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac4.png" alt="Project 4">
+                    <h3><a href="Practical 4.html">Project 4</a></h3>
+                    <p>Title of Practical  no. 4.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac5.png" alt="Project 5">
+                    <h3><a href="Practical 5.html">Project 5</a></h3>
+                    <p>Title of Practical  no. 5.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac6.png" alt="Project 6">
+                    <h3><a href="Practical 6.html">Project 6</a></h3>
+                    <p>Title of Practical  no. 6.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac7.png" alt="Project 7">
+                    <h3><a href="Practical 7.html">Project 7</a></h3>
+                    <p>Title of Practical  no. 7.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac8.png" alt="Project 8">
+                    <h3><a href="Practical 8.html">Project 8</a></h3>
+                    <p>Title of Practical  no. 8.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac9.png" alt="Project 9">
+                    <h3><a href="Practical 9.html">Project 9</a></h3>
+                    <p>Title of Practical  no. 9.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac10.png" alt="Project 10">
+                    <h3><a href="Practical 10.html">Project 10</a></h3>
+                    <p>Title of Practical  no. 10.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac11.png" alt="Project 11">
+                    <h3><a href="Practical 11.html">Project 11</a></h3>
+                    <p>Title of Practical  no. 11.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac12.png" alt="Project 12">
+                    <h3><a href="Practical 12.html">Project 12</a></h3>
+                    <p>Title of Practical  no. 12.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac13.png" alt="Project 13">
+                    <h3><a href="Practical 13.html">Project 13</a></h3>
+                    <p>Title of Practical  no. 13.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac14.png" alt="Project 14">
+                    <h3><a href="Practical 14.html">Project 14</a></h3>
+                    <p>Title of Practical  no. 14.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac15.png" alt="Project 15">
+                    <h3><a href="Practical 15.html">Project 15</a></h3>
+                    <p>Title of Practical  no. 15.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac16.png" alt="Project 16">
+                    <h3><a href="Practical 16.html">Project 16</a></h3>
+                    <p>Title of Practical  no. 16.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac17.png" alt="Project 17">
+                    <h3><a href="Practical 17.html">Project 17</a></h3>
+                    <p>Title of Practical  no. 17.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac18.png" alt="Project 18">
+                    <h3><a href="Practical 18.html">Project 18</a></h3>
+                    <p>Title of Practical  no. 18.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac19.png" alt="Project 19">
+                    <h3><a href="Practical 19.html">Project 19</a></h3>
+                    <p>Title of Practical  no. 19.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac20.png" alt="Project 20">
+                    <h3><a href="Practical 20.html">Project 20</a></h3>
+                    <p>Title of Practical  no. 20.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac21.png" alt="Project 21">
+                    <h3><a href="Practical 21.html">Project 21</a></h3>
+                    <p>Title of Practical  no. 21.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac22.png" alt="Project 22">
+                    <h3><a href="Practical 22.html">Project 22</a></h3>
+                    <p>Title of Practical  no. 22.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac23.png" alt="Project 23">
+                    <h3><a href="Practical 23.html">Project 23</a></h3>
+                    <p>Title of Practical  no. 23.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac24.png" alt="Project 24">
+                    <h3><a href="Practical 24.html">Project 24</a></h3>
+                    <p>Title of Practical  no. 24.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Prac25.png" alt="Project 25">
+                    <h3><a href="Practical 25.html">Project 25</a></h3>
+                    <p>Title of Practical  no. 25.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work with me or just say hi, feel free to reach out!</p>
+            <p><b><font size="5" color="red" face="Harlow Solid Italic">Email:</b></font> <a href="mailto:chetanm_iot@bkc.met.edu">chetanm_iot@bkc.met.edu</a></p>
+            <p><b><font size="5" color="red" face="Harlow Solid Italic">Mobile:</font><font color="blue" face="Times New Roman" size="5">8668640288</font></b></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>
